@@ -9,7 +9,7 @@
    https://www.tensorflow.org/tutorials/text/text_generation
 """
 
-# Import neccessary libaries
+# Import necessary libraries
 import tensorflow as tf
 import numpy as np
 import os
@@ -54,15 +54,15 @@ BUFFER_SIZE = 100
 # Steps per epochs
 STEPS = 50
 
-# Low temperatures results in more predictable text.
-# Higher temperatures results in more surprising text.
+# Low temperatures result in more predictable text.
+# Higher temperatures result in more surprising text.
 # Experiment to find the best setting.
 temperature = 1.0
 
 # Number of characters to generate
 num_generate = 200
 
-# Initalization of loss value as global variable
+# Initialization of loss value as a global variable
 # to be used in multiple functions
 loss = 0
 
@@ -142,7 +142,7 @@ def train_model(dataset, vocab):
     example_batch_predictions = model(input_example_batch)
     print(example_batch_predictions.shape, "# (batch_size, sequence_length, vocab_size)")
 
-  # Print out the different layors of the model
+  # Print out the different layers of the model
   model.summary()
 
   sampled_indices = tf.random.categorical(example_batch_predictions[0], num_samples=1)

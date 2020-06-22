@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-    This python scipt is used as a webscraper to gather all Friends scripts through vairous links
+    This python script is used as a web scraper to gather all Friends scripts through various links
     found at this website https://fangj.github.io/friends/
 """
 
